@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="AluraGeek - Loja online de produtos geeks." />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+        <!-- Box Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+        <title>AluraGeek</title>
+                
+         <!-- Custom CSS -->
+         <link rel="stylesheet" href="./css/reset.css">
+         <link rel="stylesheet" href="./css/styles.css" />
+         <link rel="stylesheet" href="./css/register.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>    
+            <!-- Section Header -->        
+            <section class="top-header" id="home">
+                <div class="interface">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/Logo-alura.png" alt="Logo marca da Alura">
+                            <h2>Alura<span>Geek</span></h2>                     
+                        </a>         
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/pedroalves0508/" target="_black" class="link link-linkedin"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Peu0508" target="_blank" class="link link-github"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/peu_0508/" target="_blank" class="link link-instagram"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </section>  
+            <!-- End Section Header -->  
+
+            <!-- Section Menu -->            
+            <section class="btn-menu">
+                <div class="interface">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">Página inicial</a></li>
+                            <!-- Drop-down -->
+                            <li class="drop-hover">
+                                <a href="#"><span>Cadastro</span><i class='bx bx-chevron-up icon-up'></i><i class='bx bx-chevron-down icon-down'></i></a>
+                                <div class="sub-menu">
+                                    <a href="./pages/register.html">Produtos</a>
+                                </div>
+                            </li>
+                            <!-- End Drop-down -->
+                        </ul>
+                    </nav>
+                </div>
+            </section> 
+            <!-- End Section Menu -->
+        </header>
+        <!-- End Header -->
+
+        <!-- Section Container Card -->         
+        <section class="container"> 
+            <div class="card-container">
+                <div class="card-content" data-list></div>
+            </div>    
+        </section>                   
+        <!-- End Section Container Card --> 
+
+        <!-- Modal Exclusion--> 
+        <div id="exclusion-modal" class="exclusion-modal  hidden-modal-exclusion
+        " data-exclusion-modal>
+            <div class="modal-content">
+                <p>Produto excluído com sucesso!</p>
+                <button id="exclusion-button" class="modal-button" data-exclusion-button>ok</button>
+            </div>
+        </div>
+        <!-- End Modal -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h2>AluraGeek</h2>
+                    <p>Desafio T6 One</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pedroalves0508/" target="_black"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/Peu0508" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.instagram.com/peu_0508/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Links Rápidos</h2>
+                    <ul>
+                        <li><a href="#home">Página Inicial</a></li>
+                        <li><a href="./pages/register.html">Cadastrar Produtos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contato</h2>
+                    <ul>
+                        <li>Email: contato@alurageek.com.br</li>
+                        <li>Telefone: (81) xxxx-xxxx</li>
+                        <li>Endereço: Av. Fictícia, xxx, Recife, Pernambuco</li>
+                    </ul>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Newsletter</h2>
+                    <form action="#">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AluraGeek. Desenvolvido por Pedro Alves T6 - One.</p>
+            </div>
+        </footer>
+        <!-- End footer -->
+
+        <!-- JavaScript -->
+        <script src="./js/showCards.js" type="module"></script>
+    </body>
+</html>
